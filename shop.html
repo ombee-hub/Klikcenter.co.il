@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>החנות | קליק סנטר מודיעין — כל הקטגוריות</title>
+  <meta name="description" content="כל הקטגוריות של קליק סנטר מודיעין: ספלים, חולצות, כריות, מחזיקי מפתחות, בלוקי עץ, קנבסים, מתנות בעיצוב אישי ועוד. בחרו והזמינו בוואטסאפ.">
+  <link rel="canonical" href="https://www.klikcenter.co.il/shop.html">
+  <meta property="og:title" content="החנות | קליק סנטר מודיעין">
+  <meta property="og:description" content="כל המתנות המודפסות והמוצרים בעיצוב אישי במקום אחד.">
+  <meta property="og:image" content="img/hero-gifts.jpg">
+  <meta name="theme-color" content="#205678">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="פירורי לחם">
+          <span>החנות</span>
+        </nav>
+        <h1>הקטלוג של קליק סנטר</h1>
+        <p>מאות מוצרים בעיצוב אישי — בחרו קטגוריה, ואנחנו נדאג להפוך את התמונה שלכם למתנה מושלמת.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="chips" id="filters" style="margin-bottom:34px;justify-content:center"></div>
+        <div class="cat-grid" id="shopGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">➕ עוד בחנות</span>
+          <h2 class="section-title">קטגוריות נוספות</h2>
+          <p class="section-lead">לא מצאתם? יש לנו עוד המון. שלחו הודעה ונשמח לעזור.</p>
+        </div>
+        <div class="tile-grid" id="moreGrid"></div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container">
+        <h2>לא בטוחים מה לבחור?</h2>
+        <p>ספרו לנו על האירוע ועל מי שתרצו לשמח — ונתפור לכם את המתנה המתאימה.</p>
+        <div class="cta-band__btns">
+          <a class="btn btn--wa btn--lg" data-wa="היי קליק סנטר! אשמח להתייעץ לגבי מתנה 🎁" href="#">וואטסאפ להתייעצות</a>
+          <a class="btn btn--ghost btn--lg" href="services.html">לשירותי החנות</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script>
+    (function () {
+      var S = window.SITE;
+      var groups = ["הכל"].concat(S.CATEGORIES.map(function (c) { return c.group; }).filter(function (v, i, a) { return a.indexOf(v) === i; }));
+      var filters = document.getElementById("filters");
+      filters.innerHTML = groups.map(function (g, i) {
+        return '<button class="chip' + (i === 0 ? ' is-active' : '') + '" data-group="' + g + '">' + g + '</button>';
+      }).join("");
+
+      function paint(group) {
+        var list = group === "הכל" ? S.CATEGORIES : S.CATEGORIES.filter(function (c) { return c.group === group; });
+        S.render.categories("#shopGrid", list);
+        S.initReveal();
+      }
+      paint("הכל");
+      S.render.more("#moreGrid");
+
+      filters.addEventListener("click", function (e) {
+        var btn = e.target.closest(".chip");
+        if (!btn) return;
+        filters.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-active"); });
+        btn.classList.add("is-active");
+        paint(btn.getAttribute("data-group"));
+      });
+      S.initReveal();
+    })();
+  </script>
+</body>
+</html>

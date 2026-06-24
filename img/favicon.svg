@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- אייקון הניווט של קליק סנטר — יהלום מרכזי + 4 חיצים, רקע שקוף -->
+  <path d="M24 15.5 L32.5 24 L24 32.5 L15.5 24 Z" fill="#205678"/>
+  <path d="M18 11 L24 5 L30 11" fill="none" stroke="#205678" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 37 L24 43 L30 37" fill="none" stroke="#205678" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11 18 L5 24 L11 30" fill="none" stroke="#205678" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 18 L43 24 L37 30" fill="none" stroke="#ed5829" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
