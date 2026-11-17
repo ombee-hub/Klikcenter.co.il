@@ -8,14 +8,16 @@
   const BIZ = {
     name: "קליק סנטר מודיעין",
     tagline: "חנות צילום במודיעין",
-    phoneDisplay: "055-959-3888",
-    phoneIntl: "972559593888",            // לקישורי טלפון/וואטסאפ
-    email: "info@klikcenter.co.il",
+    phoneDisplay: "08-972-7574",          // טלפון קווי (לחיוג)
+    phoneIntl: "97289727574",             // לקישור tel:
+    whatsappDisplay: "055-959-3888",      // מספר וואטסאפ
+    whatsappIntl: "972559593888",         // לקישור wa.me
+    email: "oryentmod@gmail.com",
     address: "צאלון 21, מודיעין מכבים רעות",
     addressShort: "צאלון 21, מודיעין",
     mapsQuery: "קליק סנטר צאלון 21 מודיעין",
     instagram: "https://www.instagram.com/klikcenter/",
-    facebook: "https://www.facebook.com/",
+    facebook: "https://www.facebook.com/klikcenter",
     hours: [
       ["ראשון – חמישי", "09:00 – 19:00"],
       ["שישי וערבי חג", "09:00 – 13:00"],
@@ -26,11 +28,11 @@
   // קישור וואטסאפ עם הודעה מוכנה מראש
   BIZ.wa = function (msg) {
     const text = encodeURIComponent(msg || "היי קליק סנטר, אשמח לקבל פרטים 🙂");
-    return "https://wa.me/" + BIZ.phoneIntl + "?text=" + text;
+    return "https://wa.me/" + BIZ.whatsappIntl + "?text=" + text;
   };
   BIZ.tel = "tel:+" + BIZ.phoneIntl;
 
-  const IMG = "img/";
+  const IMG = "images/";
 
   /* ---- ניווט ראשי ---- */
   const NAV = [

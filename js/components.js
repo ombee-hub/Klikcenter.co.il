@@ -86,7 +86,7 @@
       <div class="header-bar">
         <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">${icon("menu")}</button>
         <a class="brand" href="index.html" aria-label="${BIZ.name} — דף הבית">
-          <img src="img/logo-Klikcenter.webp" alt="${BIZ.name} — חנות צילום במודיעין" width="184" height="46">
+          <img src="images/logo-Klikcenter.webp" alt="${BIZ.name} — חנות צילום במודיעין" width="184" height="46">
         </a>
         <nav class="nav" aria-label="ניווט ראשי">${navLinks}</nav>
       </div>
@@ -103,7 +103,7 @@
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
     <aside class="drawer" id="drawer" aria-label="תפריט נייד">
       <div class="drawer__head">
-        <img src="img/logo-Klikcenter.webp" alt="${BIZ.name}">
+        <img src="images/logo-Klikcenter.webp" alt="${BIZ.name}">
         <button class="drawer__close" id="drawerClose" aria-label="סגירת תפריט">${icon("close")}</button>
       </div>
       <nav class="drawer__nav">${drawerLinks}</nav>
@@ -126,7 +126,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="img/logo-Klikcenter.webp" alt="${BIZ.name}">
+          <img src="images/logo-Klikcenter.webp" alt="${BIZ.name}">
           <p>חנות הצילום של מודיעין — פיתוח תמונות, מתנות מודפסות בעיצוב אישי ושירותי משרד, הכל תחת קורת גג אחת ובחיוך.</p>
           <div class="footer-social">
             <a href="${BIZ.instagram}" target="_blank" rel="noopener" aria-label="אינסטגרם">${icon("instagram")}</a>
@@ -153,7 +153,7 @@
           <ul class="footer-contact">
             <li>${icon("pin")} <span>${BIZ.address}</span></li>
             <li>${icon("phone")} <a href="${BIZ.tel}">${BIZ.phoneDisplay}</a></li>
-            <li>${icon("whatsapp")} <a href="${BIZ.wa()}" target="_blank" rel="noopener">שליחת תמונות בוואטסאפ</a></li>
+            <li>${icon("whatsapp")} <a href="${BIZ.wa()}" target="_blank" rel="noopener">${BIZ.whatsappDisplay}</a></li>
             <li>${icon("clock")} <span>א׳–ה׳ 09:00–19:00 · ו׳ 09:00–13:00</span></li>
           </ul>
         </div>
@@ -166,7 +166,7 @@
           <a href="privacy.html">מדיניות פרטיות</a>
         </nav>
         <span class="footer-credit">עיצוב ובנייה ע״י:
-          <a href="https://ombee.co.il" target="_blank" rel="noopener" aria-label="OMBee – עיצוב גרפי ובניית אתרים"><img src="img/ombee-logo.webp" alt="OMBee" width="799" height="229" loading="lazy"></a>
+          <a href="https://ombee.co.il" target="_blank" rel="noopener" aria-label="OMBee – עיצוב גרפי ובניית אתרים"><img src="images/ombee-logo.webp" alt="OMBee" width="799" height="229" loading="lazy"></a>
         </span>
       </div>
     </div>`;
