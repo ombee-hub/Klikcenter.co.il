@@ -18,6 +18,7 @@
     check: '<path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
     star: '<path d="M12 2l2.95 6.05 6.55.95-4.75 4.6 1.12 6.55L12 17.7 6.13 20.7l1.12-6.55L2.5 9.55l6.55-.95z"/>',
     arrow: '<path d="M19 12H5M12 5l-7 7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+    send: '<path d="M2 2 9 22 13 13 22 9z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/><path d="M2 2 13 13" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
     chev: '<path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
     instagram: '<path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 3.05A6.75 6.75 0 1 0 18.75 12 6.75 6.75 0 0 0 12 5.25zm0 11.14A4.39 4.39 0 1 1 16.39 12 4.39 4.39 0 0 1 12 16.39zm6.96-11.41a1.58 1.58 0 1 1-1.58-1.58 1.58 1.58 0 0 1 1.58 1.58z"/>',
     facebook: '<path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/>',
@@ -67,7 +68,7 @@
   function buildHeader() {
     const navLinks = NAV.map(n =>
       n.cta
-        ? `<a class="btn btn--brand btn--sm nav__cta" href="${n.href}">${n.label}</a>`
+        ? `<a class="btn btn--brand btn--sm nav__cta" href="${n.href}">${icon("send")} ${n.label}</a>`
         : `<a class="nav__link${navActive(n.href) ? " is-active" : ""}" href="${n.href}">${n.label}</a>`
     ).join("");
 
@@ -85,7 +86,7 @@
       <div class="header-bar">
         <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">${icon("menu")}</button>
         <a class="brand" href="index.html" aria-label="${BIZ.name} — דף הבית">
-          <img src="img/logo-Klikcenter.png" alt="${BIZ.name} — חנות צילום במודיעין" width="184" height="46">
+          <img src="img/logo-Klikcenter.webp" alt="${BIZ.name} — חנות צילום במודיעין" width="184" height="46">
         </a>
         <nav class="nav" aria-label="ניווט ראשי">${navLinks}</nav>
       </div>
@@ -102,12 +103,12 @@
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
     <aside class="drawer" id="drawer" aria-label="תפריט נייד">
       <div class="drawer__head">
-        <img src="img/logo-Klikcenter.png" alt="${BIZ.name}">
+        <img src="img/logo-Klikcenter.webp" alt="${BIZ.name}">
         <button class="drawer__close" id="drawerClose" aria-label="סגירת תפריט">${icon("close")}</button>
       </div>
       <nav class="drawer__nav">${drawerLinks}</nav>
       <div class="drawer__foot">
-        <a class="btn btn--brand btn--block" href="contact.html">${icon("mail")} יצירת קשר</a>
+        <a class="btn btn--brand btn--block" href="contact.html">${icon("send")} יצירת קשר</a>
         <a class="btn btn--ghost btn--block" href="${BIZ.tel}">${icon("phone")} ${BIZ.phoneDisplay}</a>
       </div>
     </aside>`;
@@ -125,7 +126,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="img/logo-Klikcenter.png" alt="${BIZ.name}">
+          <img src="img/logo-Klikcenter.webp" alt="${BIZ.name}">
           <p>חנות הצילום של מודיעין — פיתוח תמונות, מתנות מודפסות בעיצוב אישי ושירותי משרד, הכל תחת קורת גג אחת ובחיוך.</p>
           <div class="footer-social">
             <a href="${BIZ.instagram}" target="_blank" rel="noopener" aria-label="אינסטגרם">${icon("instagram")}</a>
@@ -142,7 +143,13 @@
           <ul>${serviceLinks}<li><a href="photo-development.html">פיתוח תמונות</a></li></ul>
         </div>
         <div class="footer-col">
-          <h4>צרו קשר</h4>
+          <h4>מידע נוסף</h4>
+          <ul>
+            <li><a href="about.html">אודות</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>יצירת קשר</h4>
           <ul class="footer-contact">
             <li>${icon("pin")} <span>${BIZ.address}</span></li>
             <li>${icon("phone")} <a href="${BIZ.tel}">${BIZ.phoneDisplay}</a></li>
@@ -153,13 +160,14 @@
       </div>
       <div class="footer-bottom">
         <span>© ${year} כל הזכויות שמורות ל${BIZ.name}</span>
-        <nav class="footer-bottom__links">
-          <a href="about.html">אודות</a>
-          <a href="contact.html">יצירת קשר</a>
+        <nav class="footer-legal" aria-label="קישורים משפטיים">
           <a href="terms.html">תקנון האתר</a>
-          <a href="privacy.html">מדיניות פרטיות</a>
           <a href="accessibility.html">הצהרת נגישות</a>
+          <a href="privacy.html">מדיניות פרטיות</a>
         </nav>
+        <span class="footer-credit">עיצוב ובנייה ע״י:
+          <a href="https://ombee.co.il" target="_blank" rel="noopener" aria-label="OMBee – עיצוב גרפי ובניית אתרים"><img src="img/ombee-logo.webp" alt="OMBee" width="799" height="229" loading="lazy"></a>
+        </span>
       </div>
     </div>`;
   }
@@ -350,6 +358,33 @@
   }
   S.initReveal = initReveal;
 
+  /* ---------- אפקט ספירה עולה למספרים (count-up) ---------- */
+  function initCounters() {
+    const nums = document.querySelectorAll(".count[data-count]");
+    if (!nums.length) return;
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const fmt = (v) => v.toLocaleString("en-US");
+    const run = (el) => {
+      const target = parseInt(el.getAttribute("data-count"), 10) || 0;
+      if (reduce) { el.textContent = fmt(target); return; }
+      const dur = 1600; let start = null;
+      const step = (ts) => {
+        if (!start) start = ts;
+        const p = Math.min((ts - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+        el.textContent = fmt(Math.round(target * eased));
+        if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(target);
+      };
+      requestAnimationFrame(step);
+    };
+    if (!("IntersectionObserver" in window)) { nums.forEach(run); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if (en.isIntersecting) { run(en.target); io.unobserve(en.target); } });
+    }, { threshold: 0.4 });
+    nums.forEach(n => io.observe(n));
+  }
+  S.initCounters = initCounters;
+
   /* ---------- כפתור וואטסאפ צף ---------- */
   function buildWaFloat() {
     const a = document.createElement("a");
@@ -380,6 +415,7 @@
     initScroll();
     buildWaFloat();
     initReveal();
+    initCounters();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

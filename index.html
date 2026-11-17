@@ -9,11 +9,11 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="קליק סנטר מודיעין | חנות צילום ומתנות בעיצוב אישי">
   <meta property="og:description" content="פיתוח תמונות, מתנות מודפסות, תמונות פספורט, המרת קלטות ושירותי משרד — הכל במקום אחד במודיעין.">
-  <meta property="og:image" content="img/hero-gifts.jpg">
+  <meta property="og:image" content="img/hero-gifts.webp">
   <meta property="og:locale" content="he_IL">
   <meta name="theme-color" content="#205678">
 
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/webp" href="img/icon-klilcnter.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "Store",
     "name": "קליק סנטר מודיעין",
-    "image": "https://www.klikcenter.co.il/img/logo-Klikcenter.png",
+    "image": "https://www.klikcenter.co.il/img/logo-Klikcenter.webp",
     "description": "חנות צילום, פיתוח תמונות ומתנות בעיצוב אישי במודיעין.",
     "telephone": "+972-55-959-3888",
     "url": "https://www.klikcenter.co.il/",
@@ -65,9 +65,9 @@
           </div>
 
           <div class="hero__media reveal" data-delay="2">
-            <img class="m1" src="img/hero-gifts.jpg" alt="מתנות מודפסות בעיצוב אישי" width="600" height="750">
-            <img class="m2" src="img/hero-sending.jpg" alt="שליחת תמונות לפיתוח" width="500" height="560">
-            <img class="m3" src="img/hero-passport.jpg" alt="תמונות פספורט" width="400" height="400">
+            <img class="m1" src="img/hero-gifts.webp" alt="מתנות מודפסות בעיצוב אישי" width="600" height="750">
+            <img class="m2" src="img/hero-sending.webp" alt="שליחת תמונות לפיתוח" width="500" height="560">
+            <img class="m3" src="img/hero-passport.webp" alt="תמונות פספורט" width="400" height="400">
             <div class="hero__badge">
               <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 4l-1.5 2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3.5L15 4zm3 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/></svg></span>
               <div><b>מודיעין</b><span>צאלון 21, מודיעין סנטר</span></div>
@@ -102,7 +102,7 @@
       <div class="container">
         <div class="split">
           <div class="split__media reveal">
-            <img src="img/cat-canvas.png" alt="הדפסת תמונות על קנבס" loading="lazy">
+            <img src="img/cat-canvas.webp" alt="הדפסת תמונות על קנבס" loading="lazy">
           </div>
           <div class="reveal" data-delay="1">
             <span class="eyebrow">🖼️ פיתוח תמונות</span>
@@ -171,10 +171,10 @@
       <div class="container">
         <!-- מספרים לדוגמה — ניתן לעדכן בקלות -->
         <div class="stats">
-          <div class="stat reveal" data-delay="1"><div class="stat__num">20<span class="text-accent">+</span></div><div class="stat__label">שנות ניסיון</div></div>
-          <div class="stat reveal" data-delay="2"><div class="stat__num">100<span class="text-accent">+</span></div><div class="stat__label">מוצרים בעיצוב אישי</div></div>
-          <div class="stat reveal" data-delay="3"><div class="stat__num">15</div><div class="stat__label">גדלי פיתוח תמונה</div></div>
-          <div class="stat reveal" data-delay="4"><div class="stat__num">1,000<span class="text-accent">+</span></div><div class="stat__label">לקוחות מרוצים</div></div>
+          <div class="stat reveal" data-delay="1"><div class="stat__num"><span class="count" data-count="20">0</span><span class="text-accent">+</span></div><div class="stat__label">שנות ניסיון</div></div>
+          <div class="stat reveal" data-delay="2"><div class="stat__num"><span class="count" data-count="100">0</span><span class="text-accent">+</span></div><div class="stat__label">מוצרים בעיצוב אישי</div></div>
+          <div class="stat reveal" data-delay="3"><div class="stat__num"><span class="count" data-count="15">0</span></div><div class="stat__label">גדלי פיתוח תמונה</div></div>
+          <div class="stat reveal" data-delay="4"><div class="stat__num"><span class="count" data-count="1000">0</span><span class="text-accent">+</span></div><div class="stat__label">לקוחות מרוצים</div></div>
         </div>
       </div>
     </section>
@@ -223,6 +223,7 @@
   <script src="js/site.js"></script>
   <script src="js/components.js"></script>
   <script src="js/accessibility.js"></script>
+  <script src="js/cookies.js"></script>
   <script>
     (function () {
       var S = window.SITE;

@@ -45,110 +45,110 @@
   /* ---- קטגוריות מוצרים (כרטיסי תמונה) ---- */
   const CATEGORIES = [
     {
-      id: "mugs", title: "ספלים", group: "מתנות מודפסות", img: IMG + "cat-mugs.png",
+      id: "mugs", title: "ספלים", group: "מתנות מודפסות", img: IMG + "cat-mugs.webp",
       blurb: "ספל עם תמונה, שם או הקדשה — מתנה אישית שמלווה כל בוקר. ספלים קלאסיים, צבעוניים, קסם וספלי תרמוס.",
       bullets: ["הדפסה איכותית בעמידות גבוהה", "ספל קסם שמגלה את התמונה בחום", "מושלם למתנה אישית ולעסקים"],
       products: [
-        { name: "ספל עם תמונה", img: IMG + "prod-mug-photo.png", desc: "ספל לבן קלאסי בהדפסה מלאה" },
-        { name: "ספל פנים צבעוני", img: IMG + "prod-mug-blue.png", desc: "פנים וידית בצבע לבחירה" },
-        { name: "ספל תרמי", img: IMG + "prod-mug-thermal.png", desc: "כוס תרמית לשמירת חום" },
+        { name: "ספל עם תמונה", img: IMG + "prod-mug-photo.webp", desc: "ספל לבן קלאסי בהדפסה מלאה" },
+        { name: "ספל פנים צבעוני", img: IMG + "prod-mug-blue.webp", desc: "פנים וידית בצבע לבחירה" },
+        { name: "ספל תרמי", img: IMG + "prod-mug-thermal.webp", desc: "כוס תרמית לשמירת חום" },
       ],
     },
     {
-      id: "shirts", title: "חולצות", group: "מתנות מודפסות", img: IMG + "cat-shirts.png",
+      id: "shirts", title: "חולצות", group: "מתנות מודפסות", img: IMG + "cat-shirts.webp",
       blurb: "חולצות מודפסות לאירועים, גיבושים, מתנות וצוותים — בהדפסה צבעונית עמידה ובמגוון מידות וצבעים.",
       bullets: ["הדפסה צבעונית מלאה ועמידה לכביסה", "מידות לילדים ולמבוגרים", "הנחות לכמויות ולקבוצות"],
       products: [
-        { name: "חולצת טי מודפסת", img: IMG + "prod-shirt.png", desc: "כותנה איכותית, הדפסה אישית" },
-        { name: "בגד גוף לתינוק", img: IMG + "prod-baby-bodysuit.png", desc: "מתנה מתוקה ליולדת" },
+        { name: "חולצת טי מודפסת", img: IMG + "prod-shirt.webp", desc: "כותנה איכותית, הדפסה אישית" },
+        { name: "בגד גוף לתינוק", img: IMG + "prod-baby-bodysuit.webp", desc: "מתנה מתוקה ליולדת" },
       ],
     },
     {
-      id: "hoodies", title: "קפוצ׳ונים וקאפות", group: "מתנות מודפסות", img: IMG + "cat-caps.png",
+      id: "hoodies", title: "קפוצ׳ונים וקאפות", group: "מתנות מודפסות", img: IMG + "cat-caps.webp",
       blurb: "קאפות וקפוצ׳ונים מודפסים — חמים, איכותיים ומושלמים לגיבוש כיתה, צוות או מתנה אישית.",
       bullets: ["בד פליז רך ואיכותי", "הדפסה או רקמה אישית", "מבצעים לקבוצות ולמוסדות"],
       products: [],
     },
     {
-      id: "pillows", title: "כריות", group: "מתנות מודפסות", img: IMG + "prod-pillow-heart.png",
+      id: "pillows", title: "כריות", group: "מתנות מודפסות", img: IMG + "prod-pillow-heart.webp",
       blurb: "כריות מודפסות בצורת לב או ריבוע עם התמונות האהובות — מתנה רכה שמחממת כל סלון.",
       bullets: ["צורת לב או ריבוע", "מילוי רך ונעים", "הדפסה דו-צדדית אפשרית"],
       products: [
-        { name: "כרית לב", img: IMG + "prod-pillow-heart.png", desc: "כרית בצורת לב בהדפסה אישית" },
-        { name: "כרית ריבוע", img: IMG + "prod-pillow-square.png", desc: "כרית מרובעת קלאסית" },
+        { name: "כרית לב", img: IMG + "prod-pillow-heart.webp", desc: "כרית בצורת לב בהדפסה אישית" },
+        { name: "כרית ריבוע", img: IMG + "prod-pillow-square.webp", desc: "כרית מרובעת קלאסית" },
       ],
     },
     {
-      id: "keychains", title: "מחזיקי מפתחות", group: "מתנות מודפסות", img: IMG + "cat-keychains.png",
+      id: "keychains", title: "מחזיקי מפתחות", group: "מתנות מודפסות", img: IMG + "cat-keychains.webp",
       blurb: "מחזיקי מפתחות מעץ או מאקריל בעיצוב אישי — מזכרת קטנה ומושלמת לאירועים ולמתנות לאורחים.",
       bullets: ["עץ טבעי או אקריל שקוף", "צורות לב, עיגול וריבוע", "אידיאלי כמתנה לאורחים באירוע"],
       products: [
-        { name: "מחזיק עץ עיגול", img: IMG + "prod-key-wood-circle.png", desc: "עץ טבוע בהדפסת תמונה" },
-        { name: "מחזיק עץ לב", img: IMG + "prod-key-wood-heart.png", desc: "צורת לב רומנטית" },
+        { name: "מחזיק עץ עיגול", img: IMG + "prod-key-wood-circle.webp", desc: "עץ טבוע בהדפסת תמונה" },
+        { name: "מחזיק עץ לב", img: IMG + "prod-key-wood-heart.webp", desc: "צורת לב רומנטית" },
       ],
     },
     {
-      id: "woodblocks", title: "בלוקי עץ ותמונות", group: "מתנות מודפסות", img: IMG + "cat-woodblocks.png",
+      id: "woodblocks", title: "בלוקי עץ ותמונות", group: "מתנות מודפסות", img: IMG + "cat-woodblocks.webp",
       blurb: "בלוק עץ עם התמונה שלכם — מסגרת מודרנית שעומדת בכל מקום. כולל בלוקי אקריל שקופים ותחתיות עץ.",
       bullets: ["מגוון גדלים מ-10x15 ועד 20x30", "בלוק אקריל שקוף יוקרתי", "סטים של תחתיות עץ מעוצבות"],
       products: [
-        { name: "בלוק תמונות אקריל", img: IMG + "prod-photoblock.png", desc: "חזית אקרילית שקופה ועבה" },
-        { name: "סט תחתיות עץ", img: IMG + "prod-coasters.png", desc: "ארבע תחתיות בהדפסה אישית" },
+        { name: "בלוק תמונות אקריל", img: IMG + "prod-photoblock.webp", desc: "חזית אקרילית שקופה ועבה" },
+        { name: "סט תחתיות עץ", img: IMG + "prod-coasters.webp", desc: "ארבע תחתיות בהדפסה אישית" },
       ],
     },
     {
-      id: "canvas", title: "קנבסים", group: "פיתוח תמונות", img: IMG + "cat-canvas.png",
+      id: "canvas", title: "קנבסים", group: "פיתוח תמונות", img: IMG + "cat-canvas.webp",
       blurb: "הדפסת התמונות שלכם על קנבס מתוח באיכות גלריה — מגיע מוכן לתלייה ומשדרג כל קיר בבית.",
       bullets: ["הדפסת UV עשירה ועמידה", "מגוון גדלים וקולאז׳ים", "מגיע מוכן לתלייה"],
       products: [],
     },
     {
-      id: "glass", title: "זכוכיות וקריסטלים", group: "פיתוח תמונות", img: IMG + "cat-glass.png",
+      id: "glass", title: "זכוכיות וקריסטלים", group: "פיתוח תמונות", img: IMG + "cat-glass.webp",
       blurb: "תמונה חרוטת או מודפסת על זכוכית וקריסטל — מתנה יוקרתית ומרשימה לאירועים ולציוני דרך.",
       bullets: ["חריטת לייזר תלת-ממדית", "הדפסה צבעונית על זכוכית", "מתנה יוקרתית ומרשימה"],
       products: [],
     },
     {
-      id: "awards", title: "מגני הוקרה ובזלת", group: "מתנות מודפסות", img: IMG + "cat-awards.png",
+      id: "awards", title: "מגני הוקרה ובזלת", group: "מתנות מודפסות", img: IMG + "cat-awards.webp",
       blurb: "מגני הוקרה, אבני בזלת ופלאקות בעיצוב אישי — הוקרה מכובדת לעובדים, מתנדבים ושותפים.",
       bullets: ["אבן בזלת איכותית", "חריטה והדפסה אישית", "מושלם לארגונים ולמוסדות"],
       products: [],
     },
     {
-      id: "baby", title: "מתנות לתינוקות", group: "אוסף לפי אירוע", img: IMG + "cat-baby.png",
+      id: "baby", title: "מתנות לתינוקות", group: "אוסף לפי אירוע", img: IMG + "cat-baby.webp",
       blurb: "מתנות מתוקות ליולדת ולתינוק — בגדי גוף, תיקים, כריות ומזכרות בהתאמה אישית.",
       bullets: ["בגד גוף מודפס בשם התינוק", "תיק וגב מעוצב", "מארזי מתנה אישיים"],
       products: [
-        { name: "בגד גוף לתינוק", img: IMG + "prod-baby-bodysuit.png", desc: "כותנה רכה בהדפסה אישית" },
-        { name: "תיק גב לילדים", img: IMG + "prod-backpack.png", desc: "תיק צבעוני בהתאמה אישית" },
+        { name: "בגד גוף לתינוק", img: IMG + "prod-baby-bodysuit.webp", desc: "כותנה רכה בהדפסה אישית" },
+        { name: "תיק גב לילדים", img: IMG + "prod-backpack.webp", desc: "תיק צבעוני בהתאמה אישית" },
       ],
     },
     {
-      id: "lovers", title: "מתנות לאוהבים", group: "אוסף לפי אירוע", img: IMG + "cat-lovers.png",
+      id: "lovers", title: "מתנות לאוהבים", group: "אוסף לפי אירוע", img: IMG + "cat-lovers.webp",
       blurb: "מתנות רומנטיות שמספרות סיפור — כריות לב, ספלים זוגיים, מחזיקי מפתחות ובלוקים עם הרגעים שלכם.",
       bullets: ["מושלם ליום נישואין וט״ו באב", "התאמה אישית של תמונה והקדשה", "מארזי מתנה זוגיים"],
       products: [
-        { name: "כרית לב", img: IMG + "prod-pillow-heart.png", desc: "כרית לב בהדפסה אישית" },
-        { name: "מחזיק לב מעץ", img: IMG + "prod-key-wood-heart.png", desc: "מזכרת זוגית קטנה" },
+        { name: "כרית לב", img: IMG + "prod-pillow-heart.webp", desc: "כרית לב בהדפסה אישית" },
+        { name: "מחזיק לב מעץ", img: IMG + "prod-key-wood-heart.webp", desc: "מזכרת זוגית קטנה" },
       ],
     },
     {
-      id: "gaming", title: "גיימינג", group: "אביזרים", img: IMG + "gaming-headset.png",
+      id: "gaming", title: "גיימינג", group: "אביזרים", img: IMG + "gaming-headset.webp",
       blurb: "פינת הגיימינג של קליק סנטר — אוזניות, עכברים, מקלדות ומיקרופונים לחוויית משחק מנצחת.",
       bullets: ["אוזניות ומיקרופונים לגיימרים", "עכברים ומקלדות מגניבים", "אביזרים משלימים במקום"],
       products: [
-        { name: "אוזניות גיימינג", img: IMG + "gaming-headset.png", desc: "צליל סראונד ונוחות לאורך זמן" },
-        { name: "עכבר גיימינג", img: IMG + "gaming-mouse.png", desc: "דיוק גבוה ותאורת RGB" },
-        { name: "מקלדת גיימינג", img: IMG + "gaming-keyboard.png", desc: "מקלדת מכנית מוארת" },
-        { name: "מיקרופון גיימינג", img: IMG + "gaming-mic.png", desc: "הקלטה ושידור בצלילות" },
+        { name: "אוזניות גיימינג", img: IMG + "gaming-headset.webp", desc: "צליל סראונד ונוחות לאורך זמן" },
+        { name: "עכבר גיימינג", img: IMG + "gaming-mouse.webp", desc: "דיוק גבוה ותאורת RGB" },
+        { name: "מקלדת גיימינג", img: IMG + "gaming-keyboard.webp", desc: "מקלדת מכנית מוארת" },
+        { name: "מיקרופון גיימינג", img: IMG + "gaming-mic.webp", desc: "הקלטה ושידור בצלילות" },
       ],
     },
   ];
 
   /* ---- אוספים נושאיים נוספים (אייקונים, ללא תמונה ייעודית) ---- */
   const MORE_CATEGORIES = [
-    { title: "חיילים וצבא", icon: "shield", img: IMG + "cat-army.png", note: "מתנות לגיוס ולשחרור" },
-    { title: "גנים ובתי ספר", icon: "school", img: IMG + "cat-schools.png", note: "מתנות סוף שנה לצוות ולילדים" },
+    { title: "חיילים וצבא", icon: "shield", img: IMG + "cat-army.webp", note: "מתנות לגיוס ולשחרור" },
+    { title: "גנים ובתי ספר", icon: "school", img: IMG + "cat-schools.webp", note: "מתנות סוף שנה לצוות ולילדים" },
     { title: "פאזלים", icon: "puzzle", note: "פאזל מהתמונה שלכם" },
     { title: "בובות דובי", icon: "bear", note: "דובי מודפס ומחבק" },
     { title: "מגנטים", icon: "magnet", note: "מגנטים לאירועים ולמקרר" },
@@ -161,19 +161,19 @@
   /* ---- שירותי החנות ---- */
   const SERVICES = [
     {
-      id: "passport", title: "תמונות פספורט וויזה", icon: "passport", img: IMG + "service-passport.jpg",
+      id: "passport", title: "תמונות פספורט וויזה", icon: "passport", img: IMG + "service-passport.webp",
       desc: "תמונות דרכון, תעודת זהות וויזה לפי דרישות כל מדינה — מצולמות ומודפסות במקום תוך דקות.",
     },
     {
-      id: "tape", title: "המרת קלטות ומדיה", icon: "tape", img: IMG + "service-tape.jpg",
+      id: "tape", title: "המרת קלטות ומדיה", icon: "tape", img: IMG + "service-tape.webp",
       desc: "המרת קלטות VHS, וידאו ומדיה ישנה לפורמט דיגיטלי — לשמור את הרגעים היקרים לדורות הבאים.",
     },
     {
-      id: "edit", title: "עריכה ושחזור תמונות", icon: "edit", img: IMG + "service-restore.jpg",
+      id: "edit", title: "עריכה ושחזור תמונות", icon: "edit", img: IMG + "service-restore.webp",
       desc: "שחזור תמונות ישנות ופגומות, תיקון צבע, הסרת קמטים והוספת/הסרת אלמנטים — בעבודת יד מקצועית.",
     },
     {
-      id: "office", title: "שירותי משרד", icon: "printer", img: IMG + "service-office.jpg",
+      id: "office", title: "שירותי משרד", icon: "printer", img: IMG + "service-office.webp",
       desc: "צילום מסמכים, הדפסות צבע ושחור-לבן, סריקה, למינציה וכריכה — כל שירותי המשרד תחת קורת גג אחת.",
     },
   ];
@@ -187,7 +187,7 @@
 
   /* ---- חוות דעת ---- */
   const TESTIMONIALS = [
-    { text: "שירות מהמם ומקצועי! פיתחו לי אלבום תמונות מהחתונה והתוצאה פשוט מושלמת. ממליץ בחום.", name: "מושיק גולדמן", role: "לקוח ממליץ", img: IMG + "testimonial.jpeg" },
+    { text: "שירות מהמם ומקצועי! פיתחו לי אלבום תמונות מהחתונה והתוצאה פשוט מושלמת. ממליץ בחום.", name: "מושיק גולדמן", role: "לקוח ממליץ", img: IMG + "testimonial.webp" },
     { text: "הזמנתי ספלים מודפסים למשפחה והכול הגיע מהר ובאיכות גבוהה. צוות אדיב שעוזר עם כל בקשה.", name: "דנה לוי", role: "מודיעין", img: "" },
     { text: "המקום היחיד שאני סומכת עליו לתמונות פספורט ולפיתוח. תמיד יוצאת מרוצה עם חיוך.", name: "אורית כהן", role: "לקוחה קבועה", img: "" },
   ];

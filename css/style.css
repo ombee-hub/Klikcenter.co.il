@@ -146,7 +146,7 @@ html { overflow-x: clip; }
 .header-bar { display: flex; align-items: center; gap: 20px; min-height: var(--header-h); }
 .brand { display: flex; align-items: center; flex-shrink: 0; }
 .brand img { height: 46px; width: auto; }
-.nav { display: flex; align-items: center; gap: 4px; }
+.nav { display: flex; align-items: center; gap: 4px; flex: 1; }
 .nav__link {
   font-family: var(--font-head); font-weight: 600; font-size: 1.02rem;
   color: var(--ink); padding: 10px 16px; border-radius: var(--r-pill);
@@ -159,7 +159,7 @@ html { overflow-x: clip; }
   background: var(--accent); border-radius: 3px;
 }
 .header-cta { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.nav__cta { margin-inline-start: 10px; }
+.nav__cta { margin-inline-start: auto; }
 .nav-toggle {
   display: none; width: 44px; height: 44px; flex-shrink: 0;
   background: none; align-items: center; justify-content: center;
@@ -481,7 +481,7 @@ html { overflow-x: clip; }
    Footer
    ========================================================================== */
 .site-footer { background: var(--brand-900); color: #b9cdd9; padding-block: clamp(48px, 6vw, 72px) 0; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 36px; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1.1fr; gap: 36px; }
 .footer-brand img { height: 50px; margin-bottom: 16px; filter: brightness(0) invert(1); opacity: .96; }
 .footer-brand p { font-size: .96rem; color: #93aab9; max-width: 300px; }
 .footer-social { display: flex; gap: 10px; margin-top: 18px; }
@@ -502,12 +502,20 @@ html { overflow-x: clip; }
 .footer-bottom a { color: #7e98a8; }
 .footer-bottom a:hover { color: #fff; }
 .footer-bottom__links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.footer-credit { display: inline-flex; align-items: center; gap: 9px; font-size: .9rem; color: #93aab9; }
+.footer-credit a { display: inline-flex; line-height: 0; opacity: .85; transition: opacity .2s; }
+.footer-credit a:hover { opacity: 1; }
+.footer-credit img { height: 26px; width: auto; filter: brightness(0) invert(1); }
+.footer-legal { display: flex; align-items: center; }
+.footer-legal a { color: #7e98a8; font-size: .9rem; padding: 0 14px; transition: color .2s; }
+.footer-legal a:hover { color: #fff; }
+.footer-legal a + a { border-inline-start: 1px solid rgba(255,255,255,.22); }
 
 /* ==========================================================================
    Floating WhatsApp
    ========================================================================== */
 .wa-float {
-  position: fixed; inset-block-end: 22px; inset-inline-end: 22px; z-index: 90;
+  position: fixed; inset-block-end: 22px; right: 22px; z-index: 90;
   width: 60px; height: 60px; border-radius: 50%; background: var(--whatsapp);
   display: grid; place-items: center; box-shadow: 0 10px 30px rgba(37,211,102,.5);
   transition: transform .25s var(--ease);
@@ -581,75 +589,3 @@ html { overflow-x: clip; }
    ========================================================================== */
 .topbar__set span { display: inline-flex; align-items: center; gap: 6px; }
 .topbar__set svg { flex-shrink: 0; }
-
-/* ==========================================================================
-   Accessibility widget
-   ========================================================================== */
-.a11y-toggle {
-  position: fixed; inset-block-end: 22px; inset-inline-start: 22px; z-index: 95;
-  width: 56px; height: 56px; border-radius: 50%; background: var(--brand);
-  display: grid; place-items: center; box-shadow: 0 10px 28px rgba(22,60,86,.42);
-  transition: transform .25s var(--ease), background .2s;
-}
-.a11y-toggle:hover { transform: scale(1.07); background: var(--brand-600); }
-.a11y-toggle svg { width: 32px; height: 32px; color: #fff; }
-.a11y-panel {
-  position: fixed; inset-block-end: 90px; inset-inline-start: 22px; z-index: 96;
-  width: min(92vw, 360px); max-height: min(78vh, 640px); overflow-y: auto;
-  background: #fff; border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
-  border: 1px solid var(--line); padding: 18px;
-  opacity: 0; visibility: hidden; transform: translateY(16px) scale(.98);
-  transition: opacity .25s var(--ease), transform .25s var(--ease), visibility .25s;
-}
-.a11y-panel.is-open { opacity: 1; visibility: visible; transform: none; }
-.a11y-panel__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-.a11y-panel__head h2 { font-size: 1.25rem; display: flex; align-items: center; gap: 8px; }
-.a11y-panel__head h2 svg { width: 24px; height: 24px; color: var(--brand); }
-.a11y-panel__close { width: 38px; height: 38px; border-radius: 10px; background: var(--bg-soft); display: grid; place-items: center; }
-.a11y-panel__close svg { width: 22px; height: 22px; color: var(--brand); }
-.a11y-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.a11y-opt {
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; text-align: center;
-  padding: 14px 8px; border: 1.5px solid var(--line); border-radius: var(--r);
-  background: #fff; color: var(--ink); font-family: var(--font-head); font-weight: 600; font-size: .9rem;
-  transition: border-color .2s, background .2s, color .2s; cursor: pointer; min-height: 92px;
-}
-.a11y-opt:hover { border-color: var(--brand); }
-.a11y-opt.is-active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-600); }
-.a11y-opt__ic { width: 28px; height: 28px; display: grid; place-items: center; color: currentColor; }
-.a11y-opt__ic svg { width: 26px; height: 26px; }
-.a11y-opt .lvl { font-size: .72rem; font-weight: 700; color: var(--accent); }
-.a11y-reset {
-  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 12px;
-  padding: 13px; border-radius: var(--r); background: var(--brand); color: #fff;
-  font-family: var(--font-head); font-weight: 700; font-size: .98rem; transition: background .2s;
-}
-.a11y-reset:hover { background: var(--brand-600); }
-.a11y-reset svg { width: 18px; height: 18px; }
-@media (max-width: 420px) { .a11y-panel { inset-inline: 12px; width: auto; } .a11y-toggle { inset-inline-start: 14px; inset-block-end: 14px; } }
-
-/* ---- Accessibility STATE classes (on <html>) ---- */
-html.a11y-contrast, html.a11y-contrast body { background: #000 !important; }
-html.a11y-contrast * { background-color: #000 !important; background-image: none !important; color: #fff !important; border-color: #fff !important; }
-html.a11y-contrast a { color: #ffea00 !important; }
-html.a11y-contrast .btn, html.a11y-contrast .a11y-reset { background: #fff !important; color: #000 !important; box-shadow: none !important; border: 2px solid #fff !important; }
-html.a11y-contrast .a11y-opt.is-active { color: #ffea00 !important; border-color: #ffea00 !important; }
-
-html.a11y-grayscale { filter: grayscale(1); }
-html.a11y-invert { filter: invert(1) hue-rotate(180deg); }
-html.a11y-invert .a11y-root, html.a11y-invert .wa-float { filter: invert(1) hue-rotate(180deg); }
-
-html.a11y-links a:not(.btn):not(.a11y-opt) { text-decoration: underline !important; text-underline-offset: 3px; outline: 2px dashed currentColor; outline-offset: 2px; }
-
-html.a11y-bigtext-1 { font-size: 18px; }
-html.a11y-bigtext-2 { font-size: 20px; }
-html.a11y-bigtext-3 { font-size: 22.5px; }
-
-html.a11y-spacing :is(p, li, span, a, h1, h2, h3, h4, label, td, button) { letter-spacing: .09em !important; word-spacing: .14em !important; }
-html.a11y-lineheight :is(p, li, span, a, h1, h2, h3, h4, label, td) { line-height: 2.1 !important; }
-html.a11y-readable :is(body, p, li, span, a, h1, h2, h3, h4, button, input, textarea, select, label, td, .nav__link) { font-family: Arial, "Segoe UI", Tahoma, Verdana, sans-serif !important; }
-html.a11y-stopmotion *, html.a11y-stopmotion *::before, html.a11y-stopmotion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-html.a11y-hideimg img, html.a11y-hideimg .cat-card__img, html.a11y-hideimg .product-card__media img, html.a11y-hideimg .svc-card__media img { visibility: hidden !important; }
-html.a11y-cursor, html.a11y-cursor * {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cpath d='M5 2l15 7.5-6.5 2.2L11 21z' fill='%23205678' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E") 5 3, auto !important;
-}
